@@ -1,5 +1,5 @@
 
-document.getElementsByClassName("rollButton")[1].addEventListener("click", rolldice());
+document.getElementsByClassName("rollButton")[0].addEventListener("click", rolldice());
 function rolldice() {
     var diceFirst = document.getElementById("firstDice")
     var diceSecond = document.getElementById("secondDice")

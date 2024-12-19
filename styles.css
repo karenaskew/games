@@ -4,10 +4,15 @@
     text-decoration: none;
 }
 
+
 .navbar ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     
+}
+
+.centreText {
+    text-align: center;
 }

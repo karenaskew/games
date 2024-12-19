@@ -1,12 +1,12 @@
 
-.navitem{
+.navitem {
     color: black;
     text-decoration: none;
     list-style: none;
 }
 
 
-.navbarList{
+.navbarList {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -14,6 +14,6 @@
     
 }
 
-.centreText{
+.centreText {
     text-align: center;
 }

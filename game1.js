@@ -1,5 +1,5 @@
 
-document.getElementsByClassName("rollButton")[1].addEventListener("click", rolldice())
+document.getElementsByClassName("rollButton")[1].addEventListener("click", rolldice());
 function rolldice() {
     var diceFirst = document.getElementById("firstDice")
     var diceSecond = document.getElementById("secondDice")
@@ -12,4 +12,4 @@ function rolldice() {
     
     diceFirst.setAttribute("src", diceRandom1);
     diceSecond.setAttribute("src", diceRandom2);
-}
+};

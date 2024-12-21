@@ -33,7 +33,7 @@ function rollSet1() {
     gameDictionary[12] = "Higher/Lower";
    
     var gameName = gameDictionary.diceSum[0]
-    document.getElementById("set1Game").setAttribute("innerHtml", gameName)
+    document.getElementById("set1Game").innerText = gameName
 
 };
 
@@ -50,5 +50,15 @@ function rollSet2() {
     diceThird.setAttribute("src", diceRandom3);
     diceThird.setAttribute("alt", randomNum3);
 
+    let forfeitDictionary = {};
+    forfeitDictionary[1] = "Shot";
+    forfeitDictionary[2] = "2 drinks";
+    forfeitDictionary[3] = "3 drinks";
+    forfeitDictionary[4] = "Half Shot";
+    forfeitDictionary[5] = "SAFE - Reroll for the other player's forfeit";
+    forfeitDictionary[6] = "Shot";
+
+    var forfeitName = forfeitDictionary.randomNum3[0]
+    document.getElementById("set1Game").innerText = forfeitName
 };
 

@@ -17,7 +17,7 @@ function rollSet1() {
 
     // sum dice
     var diceSum = randomNum1 + randomNum2;
-    document.getElementById("set1Sum").setAttribute("innerHtml", diceSum)
+    document.getElementById("set1Sum").innerText = diceSum
 
     let gameDictionary = {};
     gameDictionary[2] = "You";

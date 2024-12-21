@@ -16,7 +16,7 @@ function rollSet1() {
     diceSecond.setAttribute("alt", randomNum2);
 
     // sum dice
-    var diceSum = num1 + num2;
+    var diceSum = randomNum1 + randomNum2;
     document.getElementById("set1Sum").setAttribute("innerHtml", diceSum)
 
     let gameDictionary = {};

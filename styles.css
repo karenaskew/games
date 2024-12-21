@@ -39,3 +39,8 @@
 .halfWidth {
     width: 50%;
 }
+.rollButton {
+    margin: 10px 40px;
+    height: 45px;
+    font-size: large;
+}

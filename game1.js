@@ -1,5 +1,5 @@
 
-document.getElementsByClassName("rollButton")[0].addEventListener("click", rolldice);
+document.getElementById("button1").addEventListener("click", rolldice);
 function rolldice() {
     var diceFirst = document.getElementById("firstDice")
     var diceSecond = document.getElementById("secondDice")
@@ -14,4 +14,17 @@ function rolldice() {
     diceFirst.setAttribute("alt", randomNum1);
     diceSecond.setAttribute("src", diceRandom2);
     diceSecond.setAttribute("alt", randomNum2);
+};
+
+document.getElementById("button2").addEventListener("click", rolldice);
+function rolldice() {
+    var diceThird = document.getElementById("thirdDice")
+    
+    var randomNum3 = Math.floor(Math.random() * 6)+1;
+
+    var diceRandom3 = "./gameElements/dice" +randomNum3+ "color.png";
+    
+    diceThird.setAttribute("src", diceRandom3);
+    diceThird.setAttribute("alt", randomNum3);
+
 };

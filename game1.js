@@ -39,7 +39,7 @@ function rollSet1() {
 
     
 
-document.getElementById("button2").addEventListener("click", rollSet1);
+document.getElementById("button2").addEventListener("click", rollSet2);
 function rollSet2() {
     var diceThird = document.getElementById("thirdDice");
     

@@ -1,6 +1,6 @@
 
-document.getElementById("button1").addEventListener("click", rolldice);
-function rolldice() {
+document.getElementById("button1").addEventListener("click", rollSet1);
+function rollSet1() {
     var diceFirst = document.getElementById("firstDice")
     var diceSecond = document.getElementById("secondDice")
    
@@ -16,8 +16,8 @@ function rolldice() {
     diceSecond.setAttribute("alt", randomNum2);
 };
 
-document.getElementById("button2").addEventListener("click", rolldice);
-function rolldice() {
+document.getElementById("button2").addEventListener("click", rollSet1);
+function rollSet2() {
     var diceThird = document.getElementById("thirdDice")
     
     var randomNum3 = Math.floor(Math.random() * 6)+1;

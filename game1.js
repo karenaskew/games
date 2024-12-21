@@ -4,8 +4,8 @@ function rolldice() {
     var diceFirst = document.getElementById("firstDice")
     var diceSecond = document.getElementById("secondDice")
    
-    var randomNum1 = Math.floor(Math.random() * 6);
-    var randomNum2 = Math.floor(Math.random() * 6);
+    var randomNum1 = Math.floor(Math.random() * 6)+1;
+    var randomNum2 = Math.floor(Math.random() * 6)+1;
 
     var diceRandom1 = "./gameElements/dice" +randomNum1+ ".png";
     var diceRandom2 = "./gameElements/dice" +randomNum2+ ".png";

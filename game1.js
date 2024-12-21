@@ -17,23 +17,24 @@ function rollSet1() {
 
     // sum dice
     var diceSum = randomNum1 + randomNum2;
-    document.getElementById("set1Sum").innerText = diceSum
+    document.getElementById("set1Sum").innerText = String(diceSum);
 
     let gameDictionary = {};
-    gameDictionary[2] = "You";
-    gameDictionary[3] = "Me";
-    gameDictionary[4] = "Girls";
-    gameDictionary[5] = "5Alive";
-    gameDictionary[6] = "Guys";
-    gameDictionary[7] = "Heaven";
-    gameDictionary[8] = "War";
-    gameDictionary[9] = "Rhyme";
-    gameDictionary[10] = "Categories";
-    gameDictionary[11] = "Truth";
-    gameDictionary[12] = "Higher/Lower";
+    gameDictionary["2"] = "You";
+    gameDictionary["3"] = "Me";
+    gameDictionary["4"] = "Girls";
+    gameDictionary["5"] = "5Alive";
+    gameDictionary["6"] = "Guys";
+    gameDictionary["7"] = "Heaven";
+    gameDictionary["8"] = "War";
+    gameDictionary["9"] = "Rhyme";
+    gameDictionary["10"] = "Categories";
+    gameDictionary["11"] = "Truth";
+    gameDictionary["12"] = "Higher/Lower";
    
-    var gameName = gameDictionary.diceSum[0]
-    document.getElementById("set1Game").innerText = gameName
+    var gameNum = String(diceSum);
+    var gameName = gameDictionary.gameNum[0];
+    document.getElementById("set1Game").innerText = gameName;
 
 };
 
@@ -51,14 +52,15 @@ function rollSet2() {
     diceThird.setAttribute("alt", randomNum3);
 
     let forfeitDictionary = {};
-    forfeitDictionary[1] = "Shot";
-    forfeitDictionary[2] = "2 drinks";
-    forfeitDictionary[3] = "3 drinks";
-    forfeitDictionary[4] = "Half Shot";
-    forfeitDictionary[5] = "SAFE - Reroll for the other player's forfeit";
-    forfeitDictionary[6] = "Shot";
+    forfeitDictionary["1"] = "Shot";
+    forfeitDictionary["2"] = "2 drinks";
+    forfeitDictionary["3"] = "3 drinks";
+    forfeitDictionary["4"] = "Half Shot";
+    forfeitDictionary["5"] = "SAFE - Reroll for the other player's forfeit";
+    forfeitDictionary["6"] = "Shot";
 
-    var forfeitName = forfeitDictionary.randomNum3[0]
-    document.getElementById("set1Game").innerText = forfeitName
+    var diceNum = String(randomNum3);
+    var forfeitName = forfeitDictionary.diceNum[0];
+    document.getElementById("set1Game").innerText = forfeitName;
 };
 

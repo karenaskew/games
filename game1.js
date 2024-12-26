@@ -19,7 +19,7 @@ function rollSet1() {
     var diceSum = randomNum1 + randomNum2;
     document.getElementById("set1Sum").innerText = String(diceSum);
 
-    let gameDictionary = {};
+    var gameDictionary = {};
     gameDictionary["2"] = "You";
     gameDictionary["3"] = "Me";
     gameDictionary["4"] = "Girls";
@@ -33,7 +33,7 @@ function rollSet1() {
     gameDictionary["12"] = "Higher/Lower";
    
     var gameNum = String(diceSum);
-    var gameName = gameDictionary.gameNum[0];
+    var gameName = gameDictionary.gameNum;
     document.getElementById("set1Game").innerText = gameName;
 
 };

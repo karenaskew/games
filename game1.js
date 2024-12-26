@@ -52,15 +52,15 @@ function rollSet2() {
     diceThird.setAttribute("alt", randomNum3);
 
     let forfeitDictionary = {};
-    forfeitDictionary["1"] = "Shot";
-    forfeitDictionary["2"] = "2 drinks";
-    forfeitDictionary["3"] = "3 drinks";
-    forfeitDictionary["4"] = "Half Shot";
-    forfeitDictionary["5"] = "SAFE - Reroll for the other player's forfeit";
-    forfeitDictionary["6"] = "Shot";
+    forfeitDictionary[1] = "Shot";
+    forfeitDictionary[2] = "2 drinks";
+    forfeitDictionary[3] = "3 drinks";
+    forfeitDictionary[4] = "Half Shot";
+    forfeitDictionary[5] = "SAFE - Reroll for the other player's forfeit";
+    forfeitDictionary[6] = "Shot";
 
-    var diceNum = String(randomNum3);
-    var forfeitName = forfeitDictionary.diceNum[0];
+    var diceNumber = randomNum3;
+    var forfeitName = forfeitDictionary[diceNumber];
     document.getElementById("set1Game").innerText = forfeitName;
 };
 

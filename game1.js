@@ -61,6 +61,6 @@ function rollSet2() {
 
     var diceNumber = randomNum3;
     var forfeitName = forfeitDictionary[diceNumber];
-    document.getElementById("forfeitHeade").innerText = forfeitName;
+    document.getElementById("forfeitHeader").innerText = forfeitName;
 };
 

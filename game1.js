@@ -33,7 +33,7 @@ function rollSet1() {
     gameDictionary["12"] = "Higher/Lower";
    
     var gameNum = String(diceSum);
-    var gameName = gameDictionary.gameNum;
+    var gameName = gameDictionary.["2"];
     document.getElementById("set1Game").innerText = gameName;
 
 };

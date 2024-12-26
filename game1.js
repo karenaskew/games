@@ -20,20 +20,20 @@ function rollSet1() {
     document.getElementById("set1Sum").innerText = String(diceSum);
 
     var gameDictionary = {};
-    gameDictionary["2"] = "You";
-    gameDictionary["3"] = "Me";
-    gameDictionary["4"] = "Girls";
-    gameDictionary["5"] = "5Alive";
-    gameDictionary["6"] = "Guys";
-    gameDictionary["7"] = "Heaven";
-    gameDictionary["8"] = "War";
-    gameDictionary["9"] = "Rhyme";
-    gameDictionary["10"] = "Categories";
-    gameDictionary["11"] = "Truth";
-    gameDictionary["12"] = "Higher/Lower";
+    gameDictionary[2] = "You";
+    gameDictionary[3] = "Me";
+    gameDictionary[4] = "Girls";
+    gameDictionary[5] = "5Alive";
+    gameDictionary[6] = "Guys";
+    gameDictionary[7] = "Heaven";
+    gameDictionary[8] = "War";
+    gameDictionary[9] = "Rhyme";
+    gameDictionary[10] = "Categories";
+    gameDictionary[11] = "Truth";
+    gameDictionary[12] = "Higher/Lower";
    
-    var gameNum = String(diceSum);
-    var gameName = gameDictionary["2"];
+    var gameNumber = diceSum;
+    var gameName = gameDictionary[gameNumber];
     document.getElementById("set1Game").innerText = gameName;
 
 };

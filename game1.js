@@ -51,7 +51,7 @@ function rollSet2() {
     diceThird.setAttribute("src", diceRandom3);
     diceThird.setAttribute("alt", randomNum3);
 
-    let forfeitDictionary = {};
+    var forfeitDictionary = {};
     forfeitDictionary[1] = "Shot";
     forfeitDictionary[2] = "2 drinks";
     forfeitDictionary[3] = "3 drinks";
